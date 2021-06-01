@@ -1,11 +1,28 @@
-for i in 1..100
-    if i % 3 == 0 && i % 5 == 0
+for n in 1..100
+    if n % 3 == 0 && i % 5 == 0
         p "FIZZBANG"
-    elsif i % 3 == 0 && i % 5 != 0
+    elsif n % 3 == 0 && i % 5 != 0
         p "FIZZ"
-    elsif i % 3 != 0 && i % 5 == 0
+    elsif n % 3 != 0 && i % 5 == 0
         p "BANG"
     else 
-        p i
+        p n
     end
 end
+
+#or
+
+(1..100).each do |n|
+    if n % 3 == 0 && i % 5 == 0
+        p "FIZZBANG"
+    elsif n % 3 == 0 && i % 5 != 0
+        p "FIZZ"
+    elsif n % 3 != 0 && i % 5 == 0
+        p "BANG"
+    else 
+        p n
+    end 
+
+end
+
+
